@@ -28,7 +28,12 @@ button[data-action='start'] {
     background: linear-gradient(#ee9ca7, #ffdde1);
   }
 }
-
+button:disabled {
+  background: lightgray;
+  &:hover {
+    background: lightgray;
+  }
+}
 button[data-action='stop'] {
   cursor: pointer;
 
